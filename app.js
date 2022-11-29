@@ -1,5 +1,6 @@
 // Galway Guide - Megan McNulty
-// Parallax Scrolling
+
+// Parallax Scrolling - Header
 const translate = document.querySelectorAll(".translate");
 const big_title = document.querySelector(".big-title");
 const header = document.querySelector("header");
@@ -35,3 +36,8 @@ window.addEventListener('scroll', () => {
 
     border.style.width = `${scroll / (sectionY.top + section_height) * 30}%`;
 })
+
+// Parralax Home Page Summary 
+jarallax(document.querySelectorAll('.jarallax'), {
+    speed: 0.5
+});

@@ -23,6 +23,7 @@ header{
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background-color: #fff;
 }
 
 header:after{
@@ -105,7 +106,7 @@ nav .container{
 
 a{
     text-decoration: none;
-    color: #fff;
+    color: #800000;
 }
 
 .nav{
@@ -182,9 +183,10 @@ nav.sticky{
     color: #fff;
 }
 
+/* Home Page Content */
 section{
     width: 100%;
-    background-color: #151515;
+    background-color:transparent;
     position: relative;
 }
 
@@ -227,12 +229,12 @@ section .container > *{
     position: absolute;
     width: 0%;
     height: 3px;
-    background-color: #fff;
+    background-color: tr;
     bottom: 0;
     left: 0;
 }
 
-.shadow{
+/*.shadow{
     position: absolute;
     bottom: 100%;
     height: 300px;
@@ -240,7 +242,7 @@ section .container > *{
     left: 0;
     z-index: 20;
     background: linear-gradient(to top, #151515, transparent);
-}
+}*/
 
 .opacity{
     opacity: 0;
@@ -264,6 +266,90 @@ section .container > *{
     .title{
         font-size: 1.2rem;
     }
+}
+
+/* Home Page Content */
+body
+{
+	
+	padding-bottom: 50px;
+	overflow-x: hidden;
+}
+body:before
+{
+	content: ' Explore Galway';
+    opacity: 0%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 16em;
+	font-weight: 700;
+	color: transparent;
+	-webkit-text-stroke: 1px green;
+}
+section
+{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+section h2
+{
+	margin-left: 200px;
+	font-size: 4em;
+	color: black;
+	margin-bottom: 1px;
+}
+section .container
+{
+	position: relative;
+	width: 1000px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+section:nth-child(even) .container
+{
+	flex-direction: row-reverse;
+}
+section .container .imgBx
+{
+	position: relative;
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+	box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+}
+section .container .imgBx img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+section .container .content
+{
+	position: absolute;
+	right: 0;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	padding: 40px;
+	background: #333;
+	z-index: 1;
+	max-width: 400px;
+	color: #fff;
+	box-shadow: 0 25px 35px rgba(0,0,0,0.1);
+	border-bottom: 6px solid #800000;
+    
+}
+section:nth-child(even) .container .content
+{
+    left:0;
 }
 
 
